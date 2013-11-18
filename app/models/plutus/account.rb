@@ -38,7 +38,6 @@ module Plutus
     has_many :debit_transactions, :through => :debit_amounts, :source => :transaction
 
     validates_presence_of :type, :name
-    validates_uniqueness_of :name
 
     # The credit balance for the account.
     #
